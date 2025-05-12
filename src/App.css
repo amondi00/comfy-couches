@@ -26,15 +26,16 @@
 }
 
 .App-link {
-  color: #000102;
+  color: #681a77;
+  text-align: center;
 }
 .nav {
   background-color: #d3d3d3;
 }
 .link {
   text-decoration: none;
-  text-align: center;
-  border-color: rgb(106, 121, 136);
+  text-align: right;
+  border-color: rgb(40, 41, 43);
   border: solid 1px;
   border-radius: 12px;
   margin-top: 9px; /* Space above the link */
@@ -61,4 +62,21 @@
 }
 .para1{
   text-align: left;
+}
+ 
+.linked{
+  border: solid 0.2px;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom:2px ;
+  border-color: black;
+  text-decoration: none;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  color: black;
+  margin-left: 9px;
+  margin-right: 9px;
 }

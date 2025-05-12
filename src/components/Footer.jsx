@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Footer = () => {
   return (
     <footer className="mt-5">
@@ -59,10 +58,10 @@ const Footer = () => {
           <a href="/about">About</a>
           <p className="para1">
             At Couch Haven we believe that a couch is more than just a piece of
-            furniture;it's the heart of your home. Our Mission; Our mission
-            is to help you create the living space you've always dreamed of,
-            with couches that bring comfort, style, and durability into your
-            home. <br />
+            furniture;it's the heart of your home. Our Mission; Our mission is
+            to help you create the living space you've always dreamed of, with
+            couches that bring comfort, style, and durability into your home.{" "}
+            <br />
             Get in Touch If you have any questions or need assistance, don't
             hesitate
           </p>
@@ -70,7 +69,7 @@ const Footer = () => {
       </section>
       <section>
         <div className="footer-content bg-dark text-light">
-          <p>&copy; 2025 Barbra. All Rights Reserved.</p>
+          <p>&copy; 2025 Couch Haven. All Rights Reserved.</p>
         </div>
       </section>
     </footer>
@@ -78,3 +77,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -5,11 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
-import AddCouches from "./components/AddCouches";
 import GetCouches from "./components/GetCouches";
 import Payment from "./components/Payment";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
+import Aboutus from "./components/Aboutus";
+import NewsletterSignup from "./components/NewsletterSignup";
+import ChatBot from "./components/Chatbot";
+
+
 
 
 function App() {
@@ -17,32 +21,43 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <nav className="nav">
-          <Link to={"/signin"} className="link">
+          <Link to={"/signin"} className="linked">
             Signin
           </Link>{" "}
           <br /> <br />
-          <Link to={"/signup"} className="link">
+          <Link to={"/signup"} className="linked">
             Signup
           </Link>{" "}
           <br />
           <br />
-          <Link to={"/getcouches"} className="link">
+          <Link to={"/getcouches"} className="linked">
             Get Couches{" "}
           </Link>
           <br />
+          <Link to={"/aboutus"} className="linked">
+            About us
+          </Link>
+          <Link to={"/newslettersignup"} className="linked">
+            Newsletter signup
+          </Link>
+          <Link to= {"/chatbot"} className="linked">Chatbot</Link>
+       
         </nav>
-        <header className="App-header"> Couch Haven</header>
+        <header className="App-header">Couch Haven</header>
         <Routes>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/payment" element={<Payment />} />
-          <Route path="/addcouches" element={<AddCouches />} />
           <Route path="/getcouches" element={<GetCouches />} />
           <Route path="/" element={<GetCouches />} />
-          <Route path="*"element= {<NotFound/>}/>
-        </Routes> <Footer />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/newslettersignup" element={<NewsletterSignup />} />
+          <Route path="/chatbot" element={<ChatBot/>}/>
+        </Routes>{" "}
+        
+        <Footer />
       </BrowserRouter>
-     
     </div>
   );
 }
